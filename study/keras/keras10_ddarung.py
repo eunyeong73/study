@@ -23,7 +23,7 @@ print(train_set.info())
 print(train_set.describe())
 
 
-# ##### 결측치 처리를 할 것 1. 제거 ####
+# ##### 결측치 처리를 할 것 1. 제거 #####
 print(train_set.isnull().sum())   #널의 갯수를 구한다.
 train_set = train_set.dropna()
 print(train_set.isnull().sum())
